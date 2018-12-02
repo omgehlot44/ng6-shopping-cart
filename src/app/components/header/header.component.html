@@ -1,0 +1,26 @@
+<!--Main Navigation-->
+<header>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+            
+        <a routerLink="/" class="logo navbar-brand"><strong>Shopping Cart</strong></a>
+            
+            <div class="navbar-collapse collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a routerLink="/" class="nav-link">Products <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <div class="navbar-nav nav-flex-icons float-right">
+                            <a class="quick-btn" routerLink="/cart">
+                                <i class="fa fa-shopping-cart fa-2x"></i><br/>
+                                <span class="badge badge-danger" *ngIf="cartService.cart.products.length > 0">{{cartService.cart.products.length}}</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>  
+  </header>
+  <!--Main Navigation-->
