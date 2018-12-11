@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, NO_ERRORS_SCHEMA, APP_INITIALIZER } from '@angular/core';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { StorageServiceModule } from 'angular-webstorage-service';
 
@@ -13,6 +14,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { CheckoutReceiptComponent } from './components/checkout-receipt/checkout-receipt.component';
 
 import { CartService } from './services/cart/cart.service';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { CartService } from './services/cart/cart.service';
     HttpClientModule,
     StorageServiceModule,
     MDBBootstrapModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    NgHttpLoaderModule.forRoot()
   ],
   providers: [
     CartService,
