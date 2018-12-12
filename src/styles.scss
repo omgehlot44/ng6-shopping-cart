@@ -1,3 +1,6 @@
+.add-to-cart-btn {
+    animation-iteration-count: 4 !important; 
+ }
 .quick-btn {
     position: relative;
     display: inline-block;
@@ -45,6 +48,10 @@
 	position: absolute;
 	opacity: 0;
 	pointer-events: none
+}
+.btn-light {
+    color: #212529 !important;
+    background-color: #f8f9fa !important;
 }
 a.disabled {
     color: gray !important;
